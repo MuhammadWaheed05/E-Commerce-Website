@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product No:1 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <img src="header/logo.png" alt="">
+        <div id="nav">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="Blog.htmml">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.hmtl">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="productlist">
+        <div class="product1">
+            <img src="product/f1.jpg" alt="" width="100%" id="mainimg">
+            <div class="small-group-images">
+                <div class="pro-small-pic">
+                    <img src="product/f1.jpg" width="100%" alt="" class="smallimg">
+                </div>
+                <div class="pro-small-pic">
+                    <img src="product/f2.jpg" width="100%" alt="" class="smallimg">
+                </div>
+                <div class="pro-small-pic">
+                    <img src="product/f3.jpg" width="100%" alt="" class="smallimg">
+                </div>
+                <div class="pro-small-pic">
+                    <img src="product/f4.jpg" width="100%" alt="" class="smallimg">
+                </div>
+            </div>
+        </div>
+
+        <div class="product1Des">
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T Shirt</h4>
+            <h2>$139.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number">
+            <button>Add To Card</button>
+            <h1>Product Detail</h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis ad recusandae ipsum
+                aliquam hic quibusdam exercitationem! Suscipit ut cumque, eveniet eius impedit iusto pariatur, fugit
+                quasi eligendi non autem nihil fuga. Labore modi deleniti eaque quidem omnis qui magni, voluptatibus
+                necessitatibus possimus debitis quam exercitationem. Quasi nulla sapiente ipsa.</span>
+        </div>
+    </div>
+
+    <div id="products">
+        <h2>Feature Product</h2>
+        <p>Summer Collection New Morder Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="product/n1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <h4>$78</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="product/n2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <h4>$78</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="product/n3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <h4>$78</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="product/n4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <h4>$78</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get Email updates about our latest shop and <span>special offers.</span> </p>
+        </div>
+        <div class="form">
+            <form action="search" class="form-info">
+                <input type="text" name="email" id="" placeholder="Your email address">
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="col">
+            <img src="header/logo.png" alt="">
+            <h4>Contact us</h4>
+            <p><strong>address:</strong>234 Gullberg road,street 2</p>
+            <p><strong>Phone:</strong>+92-333-650-980-34</p>
+            <p><strong>Hours:</strong>10:00 - Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+            </div>
+        </div>
+        <div class="col2 col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col2 col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Veiw Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col3 col">
+            <h4>Install App</h4>
+            <p>From App Store or Google play</p>
+            <div class="row">
+                <img src="pay/app.jpg" alt="">
+                <img src="pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateways</p>
+            <img src="pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy;2021,Affan etc - E-Commerce Store</p>
+        </div>
+    </footer>
+
+    <script>
+        let mainImg = document.getElementById("mainimg");
+        let smallImg = document.getElementsByClassName("smallimg");
+
+        smallImg[0].onclick = function () {
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            mainimg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () { 
+            mainimg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+
+</body>
+
+</html>
